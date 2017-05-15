@@ -1,7 +1,7 @@
 #include<xc.h>           // processor SFR definitions
 #include<sys/attribs.h>  // __ISR macro
 #include<math.h>
-#include<ILI9163C.h>
+#include"ILI9163C.h"
 #include<stdio.h>
 
 #define ADDRESS 0b0100000
@@ -41,7 +41,7 @@
 #pragma config FUSBIDIO = ON // USB pins controlled by USB module
 #pragma config FVBUSONIO = ON // USB BUSON controlled by USB module
 
-int main() {
+void main() {
 
     __builtin_disable_interrupts();
 
@@ -113,4 +113,5 @@ void LCD_drawChar(char c, short x, short y, short ColorFront, short ColorBack) {
         }
     }
 }
+
 

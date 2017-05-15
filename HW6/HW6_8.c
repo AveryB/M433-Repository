@@ -1,7 +1,7 @@
 #include<xc.h>           // processor SFR definitions
 #include<sys/attribs.h>  // __ISR macro
 #include<math.h>
-#include<ILI9163C.h>
+#include"ILI9163C.h"
 #include<stdio.h>
 
 #define ADDRESS 0b0100000
